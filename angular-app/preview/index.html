@@ -1,0 +1,20 @@
+<html>
+    <body>
+        <app-hi message="this is a hi message"
+            rname="Just a Name"
+            occupation="President"
+            location="Mars"
+            first="John Wick"></app-hi>
+
+        <app-hi-form></app-hi-form>
+
+        <script src="./angularapp.js"></script>
+    </body>
+</html>
+
+<script>
+    const component = document.querySelector('app-hi');
+    component.addEventListener('display', () => {
+        alert(event.detail);
+    })
+</script>
